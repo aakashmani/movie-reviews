@@ -1,0 +1,117 @@
+/* CreateAccount.css */
+
+:root {
+    --light-grey: #F5F7F8;
+    --yellow: #F4CE14;
+    --dark-green: #495E57;
+    --dark-grey: #45474B;
+  }
+  
+  .create-account-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+  }
+  
+  .form-container {
+    color: var(--light-grey);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(73, 94, 87, 0.8);
+  }
+  
+  .form-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .form-container .welcome-text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .form-container .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form-container .form-control {
+    border-radius: 20px;
+    background-color: var(--light-grey);
+    border: 1px solid var(--dark-grey);
+    color: var(--dark-grey);
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form-container .form-control:focus {
+    border-color: var(--yellow);
+    box-shadow: 0 0 0 0.2rem rgba(244, 206, 20, 0.25);
+  }
+  
+  .form-container .btn-primary {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+  }
+  
+  .form-container .btn-primary:hover {
+    background-color: var(--dark-grey);
+  }
+  
+  .form-container a {
+    color: var(--yellow);
+  }
+  
+  .form-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Custom animations using animate.css */
+  @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+  
+  .animate__fadeInDown {
+    animation: fadeInDown 1s;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
